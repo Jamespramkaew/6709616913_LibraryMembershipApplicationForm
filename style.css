@@ -3,3 +3,9 @@
   margin: 0;
   box-sizing: border-box;  
 }
+
+form {
+    border: solid red;
+    display: flex;
+    justify-content: center;
+}
