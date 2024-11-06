@@ -11,24 +11,24 @@
     
     <form action="">
         <div>
-            <label for="name">Thai Name:</label><br>
-            <input type="text" id="name" name="first-th-name" placeholder="ชื่อ" required>
-            <input type="text" id="name" name="last-th-name" placeholder="นามสกุล" required><br><br>
-            <label for="name">English Name:</label><br>
-            <input type="text" id="name" name="first-name" placeholder="First Name" required>
-            <input type="text" id="name" name="last-name" placeholder="Last Name" required><br><br>
+            <label for="name">Thai Name:<span>*</span></label><br>
+            <input type="text" id="name" name="first-th-name" pattern="^[ก-ฮะ-์\s]+$" title="กรุณากรอกเฉพาะตัวอักษรภาษาไทย" placeholder="ชื่อ" required>
+            <input type="text" id="name" name="last-th-name" pattern="^[ก-ฮะ-์\s]+$" title="กรุณากรอกเฉพาะตัวอักษรภาษาไทย" placeholder="นามสกุล" required><br><br>
+            <label for="name">English Name:<span>*</span></label><br>
+            <input type="text" id="name" name="first-name" pattern="^[A-Za-z]+" title="กรุณากรอกเฉพาะตัวอักษรภาษาอังกฤษ" placeholder="First Name" required>
+            <input type="text" id="name" name="last-name" pattern="^[A-Za-z]+" title="กรุณากรอกเฉพาะตัวอักษรภาษาอังกฤษ" placeholder="Last Name" required><br><br>
 
-            <label for="gender">Gender:</label>
+            <label for="gender">Gender:<span>*</span></label>
             <input type="radio" id="male" name="gender" value="male" required>
             <label for="male">Male</label>
             <input type="radio" id="female" name="gender" value="female" required>
             <label for="female">Female</label><br><br>
             
-            <label for="student-id">Student ID:</label><br>
-            <input type="text" id="student-id" name="student-id" required><br><br>
+            <label for="student-id">Student ID:<span>*</span></label><br>
+            <input type="text" id="student-id" name="student-id" pattern="^[0-9]+" minlength="10" maxlength="10" required><br><br>
 
-            <label for="faculty">Faculty:</label><br>
-            <select name="faculty" id="faculty" required>
+            <label for="faculty">Faculty:<span>*</span></label><br>
+            <select name="faculty" id="faculty" title="กรุณาเลือกคณะของคุณ" required>
                 <option value="" disabled selected>-- Please select --</option>
                 <option value="science and technology">Science and Technology</option>
                 <option value="law">Law</option>
@@ -45,14 +45,14 @@
                 <option value="public health">Public Health</option>
             </select><br><br>
 
-            <label for="Email">Email:</label><br>
+            <label for="Email">Email:<span>*</span></label><br>
             <input type="email" id="email" name="email" placeholder="E-mail address" required><br><br>
 
-            <label for="date">Your Birthday:</label><br>
+            <label for="date">Your Birthday:<span>*</span></label><br>
             <input type="date" id="date" name="date" required><br><br>
 
-            <label for="kindofBook">Kind of favorite book:</label><br>
-            <select name="kindofBook" id="kindofBook" required>
+            <label for="kindofBook">Kind of favorite book:<span>*</span></label><br>
+            <select name="kindofBook" id="kindofBook" title="กรุณาเลือกประเภทหนังสือที่คุณชอบ" required>
                 <option value="" disabled selected>-- Please select --</option>
                 <option value="adventure stories">Adventure stories</option>
                 <option value="classics">Classics</option>
