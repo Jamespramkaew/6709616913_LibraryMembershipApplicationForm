@@ -11,21 +11,24 @@
     
     <form action="">
         <div>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="first-name" placeholder="First Name">
-            <input type="text" id="name" name="last-name" placeholder="Last Name"><br><br>
+            <label for="name">Thai Name:</label><br>
+            <input type="text" id="name" name="first-th-name" placeholder="ชื่อ" required>
+            <input type="text" id="name" name="last-th-name" placeholder="นามสกุล" required><br><br>
+            <label for="name">English Name:</label><br>
+            <input type="text" id="name" name="first-name" placeholder="First Name" required>
+            <input type="text" id="name" name="last-name" placeholder="Last Name" required><br><br>
 
             <label for="gender">Gender:</label>
-            <input type="radio" id="male" name="gender" value="male">
+            <input type="radio" id="male" name="gender" value="male" required>
             <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female">
+            <input type="radio" id="female" name="gender" value="female" required>
             <label for="female">Female</label><br><br>
             
             <label for="student-id">Student ID:</label><br>
-            <input type="text" id="student-id" name="student-id"><br><br>
+            <input type="text" id="student-id" name="student-id" required><br><br>
 
             <label for="faculty">Faculty:</label><br>
-            <select name="faculty" id="faculty">
+            <select name="faculty" id="faculty" required>
                 <option value="" disabled selected>-- Please select --</option>
                 <option value="science and technology">Science and Technology</option>
                 <option value="law">Law</option>
@@ -43,13 +46,14 @@
             </select><br><br>
 
             <label for="Email">Email:</label><br>
-            <input type="email" id="email" name="email" placeholder="E-mail address"><br><br>
+            <input type="email" id="email" name="email" placeholder="E-mail address" required><br><br>
 
             <label for="date">Your Birthday:</label><br>
-            <input type="date" id="date" name="date"><br><br>
+            <input type="date" id="date" name="date" required><br><br>
 
-            <label for="kindofBook">Kind of favorite book:</label>
-            <select name="kindofBook" id="kindofBook">
+            <label for="kindofBook">Kind of favorite book:</label><br>
+            <select name="kindofBook" id="kindofBook" required>
+                <option value="" disabled selected>-- Please select --</option>
                 <option value="adventure stories">Adventure stories</option>
                 <option value="classics">Classics</option>
                 <option value="Crime">Crime</option>
@@ -70,6 +74,11 @@
                 <option value="women's fiction">Women's fiction</option>
                 <option value="young adult">Young adult</option>
             </select><br><br>
+
+            <input type="checkbox" id="news" name="news">
+            <label for="news">Would you like to get info on E-mail:</label><br><br>
+
+            <input type="submit" value="Submit"><br><br>
 
         </div>
     </form>
