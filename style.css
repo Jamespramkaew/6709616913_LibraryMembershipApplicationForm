@@ -35,6 +35,24 @@ label {
   font-weight: 150;
 }
 
+#th-first-name {
+  width: 150px;
+}
+
+#th-last-name {
+  width: 150px;
+  margin-left: 15px;
+}
+
+#en-first-name {
+  width: 150px;
+}
+
+#en-last-name {
+  width: 150px;
+  margin-left: 15px;
+}
+
 #male {
   margin-left: 8px;
 }
@@ -51,12 +69,12 @@ input {
 }
 
 .input::placeholder {
-  color: #94a3b8;
+  color: #6495d8;
 }
 
 .input:focus, input:hover {
   outline: none;
-  border-color: rgba(129, 140, 248);
+  border-color: rgb(108, 122, 246);
   background-color: #fff;
   box-shadow: 0 0 0 5px rgb(129 140 248 / 30%);
 }
@@ -84,4 +102,3 @@ select {
   background-color: #333;
   border: none;
 }
-
