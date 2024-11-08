@@ -7,9 +7,23 @@
 }
 
 form {
-  border: solid red;
+  margin: 0 auto;
+  margin-top: 5rem;
+  width: 520px;
+  padding: 30px 30px;
+  /* border: solid red; */
   display: flex;
   justify-content: center;
+  background: #e1e1e1;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  border-radius: 30px;
+}
+
+form h2 {
+  font-family: Hind;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 30px;
 }
 
 span {
@@ -32,13 +46,18 @@ label {
 
 input {
   padding: 5px 10px;
-  border: solid 0.8px;
-  border-radius: 6px;
+  border: solid 0.8px #616161;
+  border-radius: 5px;
+}
+
+#date {
+  color: #616161;
 }
 
 select {
   padding: 5px 10px;
-  border: solid 0.8px;
-  border-radius: 6px;
+  border: solid 0.8px #616161;
+  border-radius: 5px;
+  color: #616161;
 }
 
